@@ -18,7 +18,7 @@ const Post = ({ post, currentUser, onDelete }) => {
         return;
       }
       const res = await axios.post(
-        `${API_URL}/api/posts/${post._id}/react`,
+        `${API_URL}/posts/${post._id}/react`,
         { type },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -40,7 +40,7 @@ const Post = ({ post, currentUser, onDelete }) => {
 
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`${API_URL}/api/posts/${post._id}`, {
+      await axios.delete(`${API_URL}/posts/${post._id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       onDelete?.(post._id); // trigger deletion in parent
