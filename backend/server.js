@@ -8,7 +8,7 @@ import jwt from "jsonwebtoken";
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: "https://network-pink.vercel.app/", credentials: true }));
+app.use(cors());
 app.use(express.json());
 
 // --------------------- Models ---------------------
