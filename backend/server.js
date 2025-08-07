@@ -198,7 +198,7 @@ app.post("/api/posts/:postId/react", auth, async (req, res) => {
 });
 
 // --------------------- Profile Route ---------------------
-app.get("/api/profile/:id", async (req, res) => {
+app.get("/api/profile/:id", auth,async (req, res) => {
   try {
     const user = await User.findById(req.params.id).select("name email bio");
     if (!user) return res.status(404).json({ error: "User not found" });
