@@ -22,7 +22,7 @@ const Profile = () => {
           navigate("/login");
           return;
         }
-        const res = await axios.get(`${API_URL}/profile/${id}`, {
+        const res = await axios.get(`${API_URL}/api/profile/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUser(res.data.user);
