@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://network-jgkl.onrender.com";
 
 const Register = () => {
   const [form, setForm] = useState({ name: "", email: "", password: "", bio: "" });
