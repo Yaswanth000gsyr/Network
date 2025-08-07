@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Networxx/static/css/main.6ccdd3fa.css",
+    "main.js": "/Networxx/static/js/main.d4abcb42.js",
+    "static/js/453.670e15c7.chunk.js": "/Networxx/static/js/453.670e15c7.chunk.js",
+    "index.html": "/Networxx/index.html",
+    "main.6ccdd3fa.css.map": "/Networxx/static/css/main.6ccdd3fa.css.map",
+    "main.d4abcb42.js.map": "/Networxx/static/js/main.d4abcb42.js.map",
+    "453.670e15c7.chunk.js.map": "/Networxx/static/js/453.670e15c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ccdd3fa.css",
+    "static/js/main.d4abcb42.js"
+  ]
+}
