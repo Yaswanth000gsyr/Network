@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import Post from "./Post";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://network-jgkl.onrender.com";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
