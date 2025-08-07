@@ -44,7 +44,7 @@ const Profile = () => {
   const handleDeletePost = async (postId) => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`${API_URL}/posts/${postId}`, {
+      await axios.delete(`${API_URL}/api/posts/${postId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setPosts(posts.filter((post) => post._id !== postId));
